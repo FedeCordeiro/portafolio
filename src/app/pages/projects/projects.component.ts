@@ -6,5 +6,42 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-
+  items = [
+    {
+      name: 'Boca Indumentaria',
+      src: './assets/img/bocaIndumentaria.png',
+      tecnology: [
+        { name: 'HTML', src: './assets/icons/html.svg' },
+        { name: 'CSS', src: './assets/icons/css-3.svg' },
+        { name: 'Bootstrap', src: './assets/icons/bootstrap.svg' },
+        { name: 'JavaScript', src: './assets/icons/js2.svg' },
+        { name: 'Angular', src: './assets/icons/angular.svg' },
+      ],
+      link: 'https://seminario-angular-psi.vercel.app/',
+      github: 'https://github.com/FedeCordeiro/SeminarioAngular'
+    },
+    {
+      name: 'Search GIFs',
+      src: './assets/img/searchGif.png',
+      tecnology: [
+        { name: 'HTML', src: './assets/icons/html.svg' },
+        { name: 'CSS', src: './assets/icons/css-3.svg' },
+        { name: 'JavaScript', src: './assets/icons/js2.svg' },
+        { name: 'Angular', src: './assets/icons/angular.svg' },
+      ],
+      link: 'https://gif-search-alpha.vercel.app/',
+      github: 'https://github.com/FedeCordeiro/GifSearch'
+    },
+    {
+      name: 'Cine Trends',
+      src: './assets/img/cineTrends.png',
+      tecnology: [
+        { name: 'HTML', src: './assets/icons/html.svg' },
+        { name: 'CSS', src: './assets/icons/css-3.svg' },
+        { name: 'JavaScript', src: './assets/icons/js2.svg' },
+      ],
+      link: 'https://fedecordeiro.github.io/CineTrends.github.io/',
+      github: 'https://github.com/FedeCordeiro/CineTrends.github.io'
+    },
+  ]
 }
