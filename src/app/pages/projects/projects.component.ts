@@ -17,7 +17,7 @@ export class ProjectsComponent {
         { name: 'JavaScript', src: './assets/icons/js2.svg' },
         { name: 'Angular', src: './assets/icons/angular.svg' },
       ],
-      link: 'https://seminario-angular-psi.vercel.app/',
+      link: 'https://boca-indumentaria-angular.vercel.app/',
       github: 'https://github.com/FedeCordeiro/SeminarioAngular'
     },
     {
