@@ -1,45 +1,30 @@
 <section id="skills">
-  <h1>Habilidades</h1>
+  <div class="container w-100 text-center">
+    <h1>Tecnologías</h1>
+    <p class="intro-skills">
+      En mi viaje por el desarrollo web, <span>he adquirido experiencia y habilidades en
+      una variedad de tecnologías.</span> Entre ellas:
+    </p>
+  </div>
   <section class="container w-100 text-center">
+    @for (item of items; track item) {
     <div class="container-fluid mb-5">
-      <h3>Lenguajes de Programación</h3>
-      <div class="d-flex justify-content-center flex-wrap">
-        <img src="/assets/img/html.png" alt="HTML" height="60" width="60">
-        <img src="/assets/img/css.png" alt="CSS" height="60" width="60">
-        <img src="/assets/img/javascript.png" alt="JavaScript" height="60" width="60">
-        <img src="/assets/img/php.png" alt="PHP" height="60" width="60">
-        <img src="/assets/img/java.png" alt="Java" height="60" width="60">
+      <h2>{{ item.name }}</h2>
+      <div class="d-flex flex-row justify-content-center flex-wrap">
+        @for (technology of item.tecnology; track technology) {
+        <div class="d-flex flex-column align-items-center m-2">
+          <img
+            class="technology-icon"
+            [src]="technology.src"
+            alt=""
+            width="60"
+            height="60"
+          />
+          <p>{{ technology.name }}</p>
+        </div>
+        }
       </div>
     </div>
-    <div class="container-fluid mb-5">
-      <h3>Frameworks y Librerías</h3>
-      <div class="d-flex justify-content-center flex-wrap">
-        <img src="/assets/img/angular.png" alt="Angular" height="60" width="60">
-        <img src="/assets/img/bootstrap.png" alt="Bootstrap" height="60" width="60">
-        <img src="/assets/img/smarty.png" alt="Smarty" height="60" width="60">
-      </div>
-    </div>
-    <div class="container-fluid mb-5">
-      <h3>Bases de Datos</h3>
-      <div class="d-flex justify-content-center flex-wrap">
-        <img src="/assets/img/mysql.png" alt="MySQL" height="60" width="60">
-        <img src="/assets/img/postgres.png" alt="Postgres" height="60" width="60">
-      </div>
-    </div>
-    <div class="container-fluid mb-5">
-      <h3>Sistema de Control de Versiones</h3>
-      <div class="d-flex justify-content-center flex-wrap">
-        <img src="/assets/img/git.png" alt="Git" height="60" width="60">
-        <img src="/assets/img/gitlab.png" alt="GitLab" height="60" width="60">
-        <img src="/assets/img/github.png" alt="GitHub" height="60" width="60">
-      </div>
-    </div>
-    <div class="container-fluid mb-5">
-      <h3>Herramientas de Gestión de Proyectos</h3>
-      <div class="d-flex justify-content-center flex-wrap">
-        <img src="/assets/img/trello.png" alt="Git" height="60" width="60">
-        <img src="/assets/img/draw.io.png" alt="GitLab" height="60" width="60">
-      </div>
-    </div>
+    }
   </section>
 </section>
