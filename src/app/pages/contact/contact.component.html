@@ -1,17 +1,21 @@
 <section id="contact">
-    <h2>Contacto</h2>
-    <!--
-    <form (submit)="sendMessage()">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" [(ngModel)]="contact.name" name="name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" [(ngModel)]="contact.email" name="email" required>
-      
-      <label for="message">Mensaje:</label>
-      <textarea id="message" [(ngModel)]="contact.message" name="message" required></textarea>
-      
-      <button type="submit">Enviar</button>
-    </form> 
-  </section>
--->
+  <h1>Contacto</h1>
+
+  <div class="container-fluid">
+    <div class="container-contact">
+      <h5>{{ emailTo }}</h5>
+      <a href="mailto:fedecordeiro.dev@gmail.com" target="_blank">
+        Enviar mensaje
+      </a>
+    </div>
+    <div class="container-contact">
+      <h5>+54-2262-579632</h5>
+      <a
+        href="https://api.whatsapp.com/send?phone=542262579632"
+        target="_blank"
+      >
+        Enviar mensaje
+      </a>
+    </div>
+  </div>
+</section>

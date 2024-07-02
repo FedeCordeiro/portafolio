@@ -45,6 +45,23 @@ p {
     filter: drop-shadow(0 0 20px rgb(0, 234, 255));
 }
 
+.container-social-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    transition: 0.3s;
+    box-shadow: (0 0 15px rgb(0, 234, 255));
+    border-radius: 50%;
+    margin: 15px;  
+}
+
+.social-icon:hover {
+    transition: 0.3s;
+    box-shadow: (0 0 25px rgb(0, 234, 255));
+}
+
 .container-button {
     margin: 50px;
     display: flex;
