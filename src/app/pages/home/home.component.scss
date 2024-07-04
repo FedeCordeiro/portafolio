@@ -42,7 +42,7 @@ p {
 
 .mi-foto:hover {
     transition: 0.3s;
-    filter: drop-shadow(0 0 20px rgb(0, 234, 255));
+    filter: drop-shadow(0 0 15px rgb(0, 234, 255));
 }
 
 .container-social-icon {
@@ -52,14 +52,15 @@ p {
 
 .social-icon {
     transition: 0.3s;
-    box-shadow: (0 0 15px rgb(0, 234, 255));
+    filter: drop-shadow(0 0 5px rgb(0, 234, 255));
     border-radius: 10px;
-    margin: 15px;  
+    margin: 15px;
+    margin-bottom: 0px; 
 }
 
 .social-icon:hover {
     transition: 0.3s;
-    box-shadow: (0 0 25px rgb(0, 234, 255));
+    filter: drop-shadow(0 0 10px rgb(0, 234, 255));
 }
 
 .container-button {
