@@ -36,13 +36,9 @@ p {
 .mi-foto {
     margin-top: 20px;
     transition: 0.3s;
-    filter: drop-shadow(0 0 10px white);
+    border: 2px solid white;
+    border-radius: 10px;
     mask-image: linear-gradient(black 70%, transparent 100%);
-}
-
-.mi-foto:hover {
-    transition: 0.3s;
-    filter: drop-shadow(0 0 15px rgb(0, 234, 255));
 }
 
 .container-social-icon {
@@ -87,7 +83,5 @@ p {
 
     .mi-foto {
         margin: 50px;
-        width: 470px;
-        height: 380px;
     }
 }
