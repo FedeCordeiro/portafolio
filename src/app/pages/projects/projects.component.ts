@@ -69,5 +69,31 @@ export class ProjectsComponent {
       link: ' ',
       github: 'https://github.com/FedeCordeiro/AirlineAPI'
     },
+    {
+      name: 'Gestion Asegurados',
+      src: './assets/img/asegurados.jpg',
+      tecnology: [
+        { name: 'HTML', src: './assets/icons/html.svg' },
+        { name: 'CSS', src: './assets/icons/css-3.svg' },
+        { name: 'PHP', src: './assets/icons/php.svg' },
+        { name: 'MySQL', src: './assets/icons/mysql.svg' },
+        { name: 'Bootstrap', src: './assets/icons/bootstrap.svg' },
+      ],
+      link: ' ',
+      github: 'https://github.com/FedeCordeiro/App-Asegurados'
+    },
+    {
+      name: 'La Favorita',
+      src: './assets/img/lafav.png',
+      tecnology: [
+        { name: 'HTML', src: './assets/icons/html.svg' },
+        { name: 'CSS', src: './assets/icons/css-3.svg' },
+        { name: 'Bootstrap', src: './assets/icons/bootstrap.svg' },
+        { name: 'JavaScript', src: './assets/icons/js2.svg' },
+        { name: 'Angular', src: './assets/icons/angular.svg' },
+      ],
+      link: 'https://la-favorita.vercel.app/',
+      github: 'https://github.com/FedeCordeiro/App-LaFavorita'
+    },
   ]
 }
