@@ -94,6 +94,19 @@ export class ProjectsComponent {
       ],
       link: 'https://la-favorita.vercel.app/',
       github: 'https://github.com/FedeCordeiro/App-LaFavorita'
+    },    
+    {
+      name: 'Coscu Army Awards',
+      src: './assets/img/caa.jpeg',
+      tecnology: [
+        { name: 'HTML', src: './assets/icons/html.svg' },
+        { name: 'CSS', src: './assets/icons/css-3.svg' },
+        { name: 'Bootstrap', src: './assets/icons/bootstrap.svg' },
+        { name: 'JavaScript', src: './assets/icons/js2.svg' },
+        { name: 'Angular', src: './assets/icons/angular.svg' },
+      ],
+      link: 'https://awards-ca.vercel.app/',
+      github: 'https://github.com/FedeCordeiro/AwardsCA'
     },
   ]
 }
