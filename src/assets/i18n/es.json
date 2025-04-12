@@ -1,0 +1,56 @@
+{
+    "nav": {
+      "home": "Inicio",
+      "education": "Educación",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "home": {
+      "hello": "¡Hola! Soy",
+      "developer": "Desarrollador Full-Stack",
+      "description1": "Tengo {{age}} años y vivo en Necochea, Argentina.",
+      "description2": "Soy estudiante avanzado de la Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas (TUDAI) en la Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN).",
+      "cv": "Descargar CV"
+    },
+    "education": {
+      "title": "Formación Académica",
+      "university": {
+      "title": "Técnico Universitario en Desarrollo de Aplicaciones",
+      "description": "Estudiante avanzado de la carrera TUDAI en UNICEN. Cuento con una base sólida en programación y actualmente curso el ultimo cuatrimestre de la carrera.",
+    "date": "2022 - Actualidad"
+    },
+    "technician": {
+    "title": "Técnico Profesional y Personal en Informática",
+    "description": "Graduado en la EEST N.º 3 como Técnico Profesional y Personal en Informática. Adquirí conocimientos en desarrollo, mantenimiento de hardware y gestión de redes.",
+    "date": "Graduado en 2014"
+  },
+      "certifications": {
+        "title": "Certificaciones",
+        "javascript": {
+          "title": "Curso de Master en JavaScript, Udemy",
+          "description": "He completado un curso de Master en JavaScript en Udemy, donde profundicé mis habilidades en este lenguaje fundamental para el desarrollo web y de aplicaciones."
+        },
+        "frontend": {
+          "title": "Curso de Desarrollo Frontend, New Times",
+          "description": "Completé un bootcamp de Frontend donde aprendí a construir sitios web modernos utilizando HTML, CSS, JavaScript y Angular, fortaleciendo mis habilidades prácticas."
+        },
+        "button": "Certificado"
+      }
+    },
+    "skills": {
+      "title": "Tecnologías",
+      "description": {
+        "part1": "En mi viaje por el desarrollo web,",
+        "part2": "he adquirido experiencia y habilidades en una variedad de tecnologías."
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "text": "Enviar mensaje"
+    },
+    "footer": {
+      "title": "Federico Cordeiro - 2025 - Todos los derechos reservados"
+    }
+  }
+  

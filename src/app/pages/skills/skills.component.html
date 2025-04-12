@@ -1,15 +1,17 @@
 <section id="skills">
   <div class="container w-100 text-center">
-    <h1>Tecnologías</h1>
+    <h1>{{ 'skills.title' | translate }}</h1>
     <p class="intro-skills">
-      En mi viaje por el desarrollo web, <span>he adquirido experiencia y habilidades en
-      una variedad de tecnologías.</span> Entre ellas:
+      {{ 'skills.description.part1' | translate }}
+      <span class="text-secondary">
+        {{ 'skills.description.part2' | translate }}
+      </span>
     </p>
   </div>
   <section class="container w-100 text-center">
     @for (item of items; track item) {
     <div class="container-fluid mb-5">
-      <h2>{{ item.name }}</h2>
+      <h3 class="text-light">{{ item.name }}</h3>
       <div class="d-flex flex-row justify-content-center flex-wrap">
         @for (technology of item.tecnology; track technology) {
         <div class="d-flex flex-column align-items-center m-2">

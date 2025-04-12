@@ -1,21 +1,30 @@
 <!-- Barra de navegacion -->
-<div class="content-wrapper">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" routerLink="" fragment="home">Inicio</a>
-            <a class="nav-link" routerLink="" fragment="about">Sobre mí</a>
-            <a class="nav-link" routerLink="" fragment="skills">Habilidades</a>
-            <a class="nav-link" routerLink="" fragment="projects">Proyectos</a>
-            <a class="nav-link" routerLink="" fragment="contact">Contacto</a>
-          </div>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page" routerLink="" fragment="home">{{ 'nav.home' | translate }}</a>
+        <a class="nav-link" routerLink="" fragment="education">{{ 'nav.education' | translate }}</a>
+        <a class="nav-link" routerLink="" fragment="skills">{{ 'nav.skills' | translate }}</a>
+        <a class="nav-link" routerLink="" fragment="projects">{{ 'nav.projects' | translate }}</a>
+        <a class="nav-link" routerLink="" fragment="contact">{{ 'nav.contact' | translate }}</a>
       </div>
-    </nav>
+      
+      <!-- Botones de idioma alineados a la derecha en desktop y centrados en mobile -->
+      <div class="ms-auto w-100 d-flex justify-content-center justify-content-lg-end align-items-center gap-2 mt-3 mt-lg-0">
+        <button class="btn btn-link p-0" (click)="switchLang('es')" title="Español">
+          <img src="../assets/icons/flag-es.svg" width="24" height="24" alt="Español">
+        </button>
+        <button class="btn btn-link p-0" (click)="switchLang('en')" title="English">
+          <img src="../assets/icons/flag-en.svg" width="24" height="22" alt="English">
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
   
   <!-- Secciones de la página -->
   <div id="home">
@@ -36,8 +45,7 @@
 
 
   <footer>
-    <h5>Federico Cordeiro</h5>
+    <p class="mb-0">&copy; {{ "footer.title" | translate}}</p>
   </footer>
   
   <router-outlet></router-outlet>
-  

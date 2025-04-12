@@ -1,26 +1,66 @@
-<section id="about">
-  <section class="container w-100">
-    <h1>Sobre mí</h1>
+<section id="education">
+  <section class="container">
+    <h1>{{ 'education.title' | translate }}</h1>
     <div class="row d-flex justify-content-center m-2">
-      <div class="col-sm-6 col-md-3">
+      <div class="col-sm-6 col-md-3 bg-dark">
         <div class="container-fluid">
-          <h4>Estudiante Avanzado de TUDAI</h4>
-          <p>Soy estudiante avanzado de la Tecnicatura en Desarrollo de Aplicaciones Informáticas en UNICEN. Tengo conocimientos sólidos en las bases de la programación. Actualmente estoy en el tercer año de la carrera.</p>
-          <p class="fecha">2022 - Actualmente</p>
+          <h5 class="text-secondary">
+            {{ 'education.university.title' | translate }}
+          </h5>
+          <p>
+            {{ 'education.university.description' | translate }}
+          </p>
+          <p class="fecha bg-success">{{ 'education.university.date' | translate }}</p>
         </div>
       </div>
-      <div class="col-sm-6 col-md-3">
+      <div class="col-sm-6 col-md-3 bg-dark">
         <div class="container-fluid">
-          <h4>Master en JavaScript en Udemy</h4>
-          <p>He completado un curso de Master en JavaScript en Udemy, donde he profundizado mis habilidades en este lenguaje fundamental para el desarrollo web y de aplicaciones.</p>
-          <p class="fecha">2022 - 2023</p>
+          <h5 class="text-secondary">
+            {{ 'education.technician.title' | translate }}
+          </h5>
+          <p>
+            {{ 'education.technician.description' | translate }}
+          </p>
+          <p class="fecha bg-success">{{ 'education.technician.date' | translate }}</p>
         </div>
       </div>
-      <div class="col-sm-6 col-md-3">
+    </div>
+  </section>
+
+  <section class="container w-100">
+    <h1 class="certifications">{{ 'education.certifications.title' | translate }}</h1>
+    <div class="row d-flex justify-content-center m-2">
+      <div class="col-sm-6 col-md-3 bg-dark">
         <div class="container-fluid">
-          <h4>Técnico en Informática</h4>
-          <p>Poseo el título de "Técnico en Informática" obtenido en la Escuela Secundaria Técnica N° 3 (EEST). Donde pude adquirir conocimientos basicos de Visual Basic, bases de datos, mantenimiento de hardware y software, etc</p>
-          <p class="fecha">Graduado en 2014</p>
+          <h5 class="text-secondary">{{ 'education.certifications.javascript.title' | translate }}</h5>
+          <p>
+            {{ 'education.certifications.javascript.description' | translate }}
+          </p>
+          <div class="container-fluid text-center">
+            <a
+              href="https://www.udemy.com/certificate/UC-03d072a4-8200-4779-bd3d-91de490390d8/"
+              class="credencial bg-success text-white d-inline-block mt-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ 'education.certifications.button' | translate }}</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3 bg-dark">
+        <div class="container-fluid">
+          <h5 class="text-secondary">{{ 'education.certifications.frontend.title' | translate }}</h5>
+          <p>
+            {{ 'education.certifications.frontend.description' | translate }}
+          </p>
+          <div class="container-fluid text-center">
+            <a
+              href="https://drive.google.com/file/d/1WvHbfv3OjkuO_87GogD-jCkWolA91gB4/view"
+              class="credencial bg-success text-white d-inline-block mt-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ 'education.certifications.button' | translate }}</a>
+          </div>
         </div>
       </div>
     </div>

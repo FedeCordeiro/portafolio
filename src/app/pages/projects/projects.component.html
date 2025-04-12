@@ -1,10 +1,10 @@
 <section id="projects">
 
-  <h1>Proyectos</h1>
+  <h1>{{'nav.projects' | translate}}</h1>
 
   <div class="portfolio-container">
     @for (item of items; track item) {
-    <article class="portfolio-item">
+    <article class="portfolio-item bg-dark">
       <h3>{{ item.name }}</h3>
       <div class="portfolio-img">
         <img [src]="item.src" [alt]="item.name" />
@@ -21,13 +21,13 @@
 
         <div class="portfolio-item-cta">
           <div class="buttons">
-            <a [href]="item.github" class="btn btn-primary" target="_blank">
-              <i class="bx bxl-github"></i> Github
+            <a [href]="item.github" class="btn" target="_blank">
+              <i class="bx bxl-github"></i> <img src="/assets/icons/github.svg" width="30" height="20">
             </a>
               
             @if (item.link && item.link.trim() !== '') {
-              <a [href]="item.link" class="btn btn-primary" target="_blank">
-                <i class="bx bxs-send"></i> Demo
+              <a [href]="item.link" class="btn" target="_blank">
+                <i class="bx bxs-send"></i><img src="/assets/icons/external-link.svg" width="30" height="20">
               </a>
             }
           </div>

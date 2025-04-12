@@ -1,41 +1,33 @@
 <section class="container w-100">
   <div class="container-fluid">
     <h1>
-      Hola! soy
-      <span>Federico</span>
+      {{ 'home.hello' | translate }} <span class="text-secondary">Federico</span>
     </h1>
-    <h3>Desarrollador Full-Stack</h3>
+    <h3 class="text-light text-xl-center">{{ 'home.developer' | translate }}</h3>
     <p>
-      Tengo {{age}} años y vivo en Necochea. Soy estudiante avanzado de la
-      Tecnicatura en Desarrollo de Aplicaciones Informáticas (TUDAI) en la
-      Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN).
+      {{ 'home.description1' | translate:{ age: age } }}
+      {{ 'home.description2' | translate }}
     </p>
   </div>
   <div class="container-fluid d-flex align-items-center justify-content-center">
     <img
       class="mi-foto"
-      src="/assets/img/mi-foto.png"
+      src="/assets/img/fotoAI.png"
       alt="Federico Cordeiro"
-      height="363px"
-      width="266px"
     />
   </div>
 </section>
-<div class="container-social-icon">
-  <a href="https://www.linkedin.com/in/cordeirofederico/" target="_blank">
-    <img class="social-icon" src="/assets/icons/linkedin.svg" alt="LinkedIn" width="50" height="50">
+
+<!-- Botones sociales + CV -->
+<div class="container-actions">
+  <a href="https://www.linkedin.com/in/cordeirofederico/" target="_blank" class="btn btn-dark action-btn">
+    <img class="social-icon" src="/assets/icons/linkedin.svg" alt="LinkedIn" width="20" height="15">LinkedIn
   </a>
-  <a href="https://github.com/FedeCordeiro" target="_blank">
-    <img class="social-icon" src="/assets/icons/github2.svg" alt="GitHub" width="50" height="55">
+  <a href="/assets/pdf/CORDEIRO FEDERICO - CV.pdf" target="_blank" download="Cordeiro Federico - CV" class="btn btn-dark action-btn">
+    <img class="social-icon" src="/assets/icons/download.svg" alt="Cv" width="23" height="23">
+    {{ 'home.cv' | translate }}
   </a>
-</div>
-<div class="container-button">
-  <a
-    id="button-cv"
-    href="/assets/pdf/CORDEIRO FEDERICO - CV.pdf"
-    target="_blank"
-    download="Cordeiro Federico - CV"
-    class="btn btn-outline-light"
-    >Descargar CV</a
-  >
+  <a href="https://github.com/FedeCordeiro" target="_blank" class="btn btn-dark action-btn">
+    <img class="social-icon" src="/assets/icons/github.svg" alt="GitHub" width="20" height="20">GitHub
+  </a>
 </div>

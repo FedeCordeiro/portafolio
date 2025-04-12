@@ -1,20 +1,22 @@
 <section id="contact">
-  <h1>Contacto</h1>
+  <h1>{{ 'contact.title' | translate}}</h1>
 
   <div class="container-fluid">
-    <div class="container-contact">
+    <div class="container-contact bg-secondary">
       <h5>{{ emailTo }}</h5>
+      <img src="/assets/icons/email-open-svgrepo-com.svg" width="20" height="20">
       <a href="mailto:fedecordeiro.dev@gmail.com" target="_blank">
-        Enviar mensaje
+        {{ 'contact.text' | translate}}
       </a>
     </div>
-    <div class="container-contact">
+    <div class="container-contact bg-dark">
       <h5>+54-2262-579632</h5>
+      <img src="/assets/icons/whatsapp-svgrepo-com.svg" width="18" height="18">
       <a
         href="https://api.whatsapp.com/send?phone=542262579632"
         target="_blank"
       >
-        Enviar mensaje
+        {{ 'contact.text' | translate}}
       </a>
     </div>
   </div>

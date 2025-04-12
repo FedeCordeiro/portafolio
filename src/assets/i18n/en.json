@@ -1,0 +1,56 @@
+{
+    "nav": {
+      "home": "Home",
+      "education": "Education",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "home": {
+      "hello": "Hello! I'm",
+      "developer": "Full-Stack Developer",
+      "description1": "I am {{age}} years old and live in Necochea, Argentina.",
+      "description2": "I am an advanced student in the Technical Degree in Computer Application Development (TUDAI) at the Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN).",
+      "cv": "Download CV"
+    },
+    "education": {
+      "title": "Academic Background",
+      "university": {
+        "title": "University Technician in Computer Applications",
+        "description": "Advanced student of the TUDAI program at UNICEN. I have a strong foundation in programming and I'm currently in the final stage of the degree.",
+        "date": "2022 - Present"
+      },
+      "technician": {
+        "title": "Professional & Personal Computer Technician",
+        "description": "Graduated from EEST N°3 as a Professional and Personal Computer Technician. Gained skills in development, hardware maintenance, and network management.",
+        "date": "Graduated in 2014"
+      },
+      "certifications": {
+        "title": "Certifications",
+        "javascript": {
+          "title": "JavaScript Mastery Course, Udemy",
+          "description": "I have completed a JavaScript Mastery course on Udemy, where I deepened my skills in this fundamental language for web and application development."
+        },
+        "frontend": {
+          "title": "Frontend Development Course, New Times",
+          "description": "I completed a Frontend Bootcamp where I learned to build modern websites using HTML, CSS, JavaScript and Angular."
+        },
+        "button": "Certificate"
+      }
+    },
+    "skills": {
+      "title": "Technologies",
+      "description": {
+        "part1": "In my web development journey,",
+        "part2": "I have gained experience and skills in a variety of technologies."
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "Send message"
+    },
+    "footer": {
+      "title": "Federico Cordeiro - 2025 - All rights reserved"
+    }
+  }
+  

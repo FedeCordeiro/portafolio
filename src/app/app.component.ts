@@ -1,6 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,22 @@ import { ViewportScroller } from '@angular/common';
 })
 export class AppComponent implements AfterViewInit {
   title = 'portafolio';
-  constructor(private router: Router, private viewportScroller: ViewportScroller) {}
 
+  constructor(
+    private router: Router,
+    private viewportScroller: ViewportScroller,
+    private translate: TranslateService
+  ) {
+    // Idioma por defecto
+    this.translate.setDefaultLang('en');
+  }
+
+  // Cambiar idioma
+  switchLang(lang: string) {
+    this.translate.use(lang);
+  }
+
+  // Scroll automático al fragmento en la URL
   ngAfterViewInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {

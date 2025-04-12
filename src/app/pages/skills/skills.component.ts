@@ -28,7 +28,7 @@ export class SkillsComponent {
       ],
     },
     {
-      name: 'Herramientas',
+      name: 'Tools & Technologies',
       tecnology: [
         { name: 'Git', src: './assets/icons/git.svg' },
         { name: 'GitHub', src: './assets/icons/github.svg' },
